@@ -1,8 +1,5 @@
 <template>
-  <div>
-    <h1>Su componente aquí debajo</h1>
-    <!-- Su componente -->
-  </div>
+  <router-view />
 </template>
 
 <style>
