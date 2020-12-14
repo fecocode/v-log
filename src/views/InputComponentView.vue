@@ -1,5 +1,6 @@
 <template>
-  <input-component></input-component>
+  <input-component title="usuario@ejemplo.com" type="email"></input-component>
+  <input-component type="password"></input-component>
 </template>
 
 <script>
