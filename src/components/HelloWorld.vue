@@ -1,88 +1,14 @@
 <template>
-  <div class="hello">
-    <h1>{{ msg }}</h1>
-    <p>
-      For a guide and recipes on how to configure / customize this project,<br />
-      check out the
-      <a href="https://cli.vuejs.org" target="_blank" rel="noopener"
-        >vue-cli documentation</a
-      >.
-    </p>
-    <h3>Installed CLI Plugins</h3>
-    <ul>
-      <li>
-        <a
-          href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-babel"
-          target="_blank"
-          rel="noopener"
-          >babel</a
-        >
-      </li>
-      <li>
-        <a
-          href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-eslint"
-          target="_blank"
-          rel="noopener"
-          >eslint</a
-        >
-      </li>
-    </ul>
-    <h3>Essential Links</h3>
-    <ul>
-      <li>
-        <a href="https://vuejs.org" target="_blank" rel="noopener">Core Docs</a>
-      </li>
-      <li>
-        <a href="https://forum.vuejs.org" target="_blank" rel="noopener"
-          >Forum</a
-        >
-      </li>
-      <li>
-        <a href="https://chat.vuejs.org" target="_blank" rel="noopener"
-          >Community Chat</a
-        >
-      </li>
-      <li>
-        <a href="https://twitter.com/vuejs" target="_blank" rel="noopener"
-          >Twitter</a
-        >
-      </li>
-      <li>
-        <a href="https://news.vuejs.org" target="_blank" rel="noopener">News</a>
-      </li>
-    </ul>
-    <h3>Ecosystem</h3>
-    <ul>
-      <li>
-        <a href="https://router.vuejs.org" target="_blank" rel="noopener"
-          >vue-router</a
-        >
-      </li>
-      <li>
-        <a href="https://vuex.vuejs.org" target="_blank" rel="noopener">vuex</a>
-      </li>
-      <li>
-        <a
-          href="https://github.com/vuejs/vue-devtools#vue-devtools"
-          target="_blank"
-          rel="noopener"
-          >vue-devtools</a
-        >
-      </li>
-      <li>
-        <a href="https://vue-loader.vuejs.org" target="_blank" rel="noopener"
-          >vue-loader</a
-        >
-      </li>
-      <li>
-        <a
-          href="https://github.com/vuejs/awesome-vue"
-          target="_blank"
-          rel="noopener"
-          >awesome-vue</a
-        >
-      </li>
-    </ul>
+  <div class="container">
+    <div id="exit">
+    </div>
+    <div id="autor">
+      <p>Ridhwan Nordin</p>
+      <p id="arroba">@ridzjcob</p>
+    </div>
+    <div class="heroSquare">
+      <h1>MI <br />PRIMER <br />POST <br />SOBRE <br />VUE </h1>
+    </div>
   </div>
 </template>
 
@@ -97,6 +23,56 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+#exit{
+  border: rgb(255, 0, 0) 2px solid;
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  height: 24px;
+  width: 24px;
+}
+
+#autor{
+  border: rgb(0, 0, 0) 2px solid;
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  height: 20px;
+  width: 150px;
+  color: white;
+  font-size: 13px;
+  line-height: 15px;
+}
+
+#arroba{
+  font-size: 11px;
+  line-height: 13px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.container{
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background: url(photo-1561435133-c44befe370ab.jpg);
+  background-position: center;
+  background-size: 160%;
+}
+.heroSquare{
+  padding: 30px;
+  background-color: rgb(0, 0, 0, 0.5);
+  width: 100vw;
+
+}
+h1 {
+  font-size: 250%;
+  line-height: 56px;
+  color: white;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.35);
+backdrop-filter: blur(1px);
+}
 h3 {
   margin: 40px 0 0;
 }
