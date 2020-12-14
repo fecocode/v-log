@@ -35,6 +35,7 @@ export default {
 #autor{
   border: rgb(0, 0, 0) 2px solid;
   position: absolute;
+  
   top: 5%;
   left: 5%;
   height: 20px;
