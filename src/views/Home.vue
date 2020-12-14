@@ -1,7 +1,7 @@
 <template>
   <div>
     <h1>Esta es una prueba para la pull request</h1>
-    <h2>Introduje una nueva linea</h2>
+    <h2>Este es otro texto de prueba</h2>
     <!-- Su componente -->
   </div>
 </template>
