@@ -1,5 +1,7 @@
 <template>
-  <title-component />
+  <title-component text="Este es el componente título" size="sm" />
+  <title-component text="Este es el componente título" size="md" />
+  <title-component text="Este es el componente título" size="lg" />
 </template>
 
 <script>
