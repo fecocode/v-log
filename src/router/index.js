@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from "vue-router";
 import Home from "../views/Home.vue";
-import PhotoComponentView from "../views/PhotoComponentView"
+import UploadImageView from '../views/UploadImageView'
 
 const routes = [
   {
@@ -9,9 +9,9 @@ const routes = [
     component: Home
   },
   {
-    path: "/photo-component",
-    name: "photo-component",
-    component: PhotoComponentView
+    path: '/upload-image',
+    name: 'upload-image',
+    component: UploadImageView
   }
 ];
 
