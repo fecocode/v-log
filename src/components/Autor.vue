@@ -23,7 +23,6 @@ export default {
 
     .autor {
     background-color: #F8F9F9;
-    border-radius: 5px;
     margin:0px auto;
     display: flex;
     align-items: center;
@@ -45,5 +44,33 @@ export default {
     font-weight: 500;
     margin: 0 auto;
     }
+
+    @media screen and (max-width: 400px) {
+        .autor {
+            background-color: #F8F9F9;
+            margin: 0px auto;
+            display: flex;
+            align-items: center;
+
+        }
+        .imagen {
+            margin:10px;
+        }
+
+        img {
+            border-radius: 50%    
+        }
+
+        h5{
+            margin: 0 auto;
+        }
+
+        h6 {
+            font-weight: 500;
+            margin: 0 auto;
+        }
+    }
+
+
 
 </style>
