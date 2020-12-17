@@ -1,5 +1,7 @@
 <template>
-  <input-component title="usuario@ejemplo.com" type="email"></input-component>
+  <!-- type="email" example -->
+  <input-component placeholder="usuario@ejemplo.com" type="email" @changed="inputChange"></input-component>
+  <!-- type="password" example -->
   <input-component type="password"></input-component>
 </template>
 
@@ -10,6 +12,11 @@ export default {
   name: "InputComponentView",
   components: {
     InputComponent
+  },
+  methods: {
+    inputChange(event) {
+      console.log(event);
+    }
   }
 }
 </script>

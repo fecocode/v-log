@@ -1,6 +1,6 @@
 <template>
   <div class="div">
-    <input :type="type" :placeholder="title">
+    <input :type="type" :placeholder="placeholder" @keyup="emitChangeValue">
   </div>
 </template>
 
@@ -8,10 +8,14 @@
 export default {
   name: "InputComponent",
   props: {
-    title: String,
+    placeholder: String,
     type: String,
+  },
+  methods: {
+    emitChangeValue(event) {
+      this.$emit('changed', event.target.value);
+    }
   }
-
 }
 </script>
 
@@ -23,7 +27,6 @@ export default {
     color:  #31475E;
     padding: 0 17px;
   }
-
   ::placeholder {
     color:  #31475E;
   }
