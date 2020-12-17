@@ -1,6 +1,9 @@
 <template>
     <div>
-        <upload-image :picture='picture' :titleImage='titleImage' :btn='btn'></upload-image>
+        <upload-image
+        :picture='picture'
+        :titleImage='titleImage'
+        :btn='btn' />
     </div>
 </template>
 

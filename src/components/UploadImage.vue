@@ -14,28 +14,32 @@
 export default {
     name: 'UploadImage',
     props: {
-        picture: Image,
+        picture: String,
         titleImage: String,
         btn: String
     }
 }
 </script>
 
-<style>
+<style scoped>
     .container{
         display: flex;
-        width: 100%;
+        width: 85%;
         justify-content: space-between;
+        margin: 0 auto;
+    }
+    .container .image{
+        width: 50%;
     }
     .container .image img{
-        width: 200px;
-        margin: 15px;
-        height: 150px;
+        width: 100%;
+        margin: 15px auto;
     }
     .container .text{
         display: flex;
         width: 100%;
-        flex-direction: column;
-        justify-content: space-evenly;
+        align-items: baseline;
+        flex-flow: row wrap;
+        justify-content: center;
     }
 </style>
