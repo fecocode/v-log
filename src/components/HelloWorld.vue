@@ -3,8 +3,11 @@
     <div id="exit">
     </div>
     <div id="autor">
-      <p>Ridhwan Nordin</p>
-      <p id="arroba">@ridzjcob</p>
+      <img id="avatar" src="https://firebasestorage.googleapis.com/v0/b/v-log-d4c0e.appspot.com/o/avatar_1.jpeg?alt=media&token=886d56d9-123c-46ff-be91-fe77251ba613" alt="">
+      <div class="arroba">    
+        <span>Ridhwan Nordin</span>
+        <span>@ridzjcob</span>
+      </div>
     </div>
     <div class="heroSquare">
       <h1>MI <br />PRIMER <br />POST <br />SOBRE <br />VUE </h1>
@@ -23,6 +26,11 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+#avatar{
+  border-radius: 20px;
+  height: 150%;
+}
+
 #exit{
   border: rgb(255, 0, 0) 2px solid;
   position: absolute;
@@ -33,26 +41,31 @@ export default {
 }
 
 #autor{
-  border: rgb(0, 0, 0) 2px solid;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
   position: absolute;
-  
+
   top: 5%;
   left: 5%;
   height: 20px;
   width: 150px;
   color: white;
   font-size: 13px;
-  line-height: 15px;
 }
 
-#arroba{
+.arroba{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
   font-size: 11px;
-  line-height: 13px;
-  margin: 0px;
+  margin-left: 10px;
   padding: 0px;
 }
 
 .container{
+  box-sizing: border-box;
   display: flex;
   align-items: center;
   height: 100vh;
@@ -62,9 +75,10 @@ export default {
   background-size: 160%;
 }
 .heroSquare{
-  padding: 30px;
+  box-sizing: border-box;
+  padding: 0;
   background-color: rgb(0, 0, 0, 0.5);
-  width: 100vw;
+  width: 100%;
 
 }
 h1 {
