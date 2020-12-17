@@ -1,6 +1,6 @@
 <template>
     <div>
-        <img src="https://i.pinimg.com/564x/1c/d8/77/1cd8779f1b9dd4f4e0b1ade34c57f93c.jpg" alt="">
+        <img :src="pictureBackground" alt="imagen de fondo">
         <div class="photograf">Avatar fotografo</div>
         <div class="btn"></div>
     </div>
@@ -8,7 +8,10 @@
 
 <script>
 export default {
-    name: 'PhotoComponent'
+    name: 'PhotoComponent',
+    props: {
+        pictureBackground: String
+    }
 }
 </script>
 
@@ -20,7 +23,6 @@ export default {
     .photograf{
         position: relative;
         top: -80px;
-        left: -100px;
         color: #fff;
         font-size: 1.5rem;
     }

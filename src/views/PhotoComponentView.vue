@@ -1,6 +1,6 @@
 <template>
     <div>
-        <photo-component></photo-component>
+        <photo-component :pictureBackground="pictureBackground"></photo-component>
     </div>
 </template>
 
@@ -11,7 +11,7 @@ export default {
     components: { PhotoComponent },
     data() {
         return {
-            // picture: "https://i.pinimg.com/564x/1c/d8/77/1cd8779f1b9dd4f4e0b1ade34c57f93c.jpg"
+            pictureBackground: "https://i.pinimg.com/564x/1c/d8/77/1cd8779f1b9dd4f4e0b1ade34c57f93c.jpg"
         }
     },
 }
