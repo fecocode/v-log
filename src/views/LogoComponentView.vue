@@ -1,5 +1,5 @@
 <template>
-  <logo/>
+<logo/>
 </template>
 
 <script>
@@ -9,7 +9,7 @@ export default {
     name: "LogoComponentView",
     components: {
       Logo
-    }
+    },
 };
 </script>
 
