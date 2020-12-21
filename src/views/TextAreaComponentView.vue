@@ -1,5 +1,5 @@
 <template>
-    <text-area/>
+    <text-area placeholder="#Texto del post con soporte Markdown"/>
 </template>
 
 <script>
