@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from "vue-router";
 import Home from "../views/Home.vue";
 import PhotoComponentView from "../views/PhotoComponentView"
+import AvatarUsuarioView from "../views/AvatarUsuarioView"
 
 const routes = [
   {
@@ -12,6 +13,11 @@ const routes = [
     path: "/photo-component",
     name: "photo-component",
     component: PhotoComponentView
+  },
+  {
+    path: "/avatar-usuario",
+    name: "avatar-usuario",
+    component: AvatarUsuarioView
   }
 ];
 
